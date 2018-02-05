@@ -6,6 +6,9 @@ It uses the `konsulting/dusk-standalone` package to set up Dusk for us, and allo
 
 It also demonstrates one way to perform authentication actions with the codebase.
 
+[![Build Status](https://travis-ci.org/konsulting/dusk-standalone-example.svg?branch=master)](https://travis-ci.org/konsulting/dusk-standalone-example)
+[![StyleCI](https://styleci.io/repos/120371047/shield?branch=master)](https://styleci.io/repos/120371047)
+
 ## Test Server
 
 The package include some light scripts used for testing the package itself, which will boot a php server process.  It will only do this when there is no `.env` file present.
