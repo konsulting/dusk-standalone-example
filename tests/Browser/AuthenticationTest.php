@@ -2,8 +2,8 @@
 
 namespace App\Tests\Browser\Andisio;
 
-use Laravel\Dusk\Browser;
 use App\Tests\DuskTestCase;
+use Laravel\Dusk\Browser;
 
 class AuthenticationTest extends DuskTestCase
 {

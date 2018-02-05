@@ -9,7 +9,7 @@ class LoggedInTestCase extends DuskTestCase
     use SimplifiesCustomLogin;
 
     /**
-     * Make sure we are logged in before each test is run
+     * Make sure we are logged in before each test is run.
      */
     protected function setUp()
     {

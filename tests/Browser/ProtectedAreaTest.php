@@ -2,8 +2,8 @@
 
 namespace App\Tests\Browser\Andisio;
 
-use Laravel\Dusk\Browser;
 use App\Tests\LoggedInTestCase;
+use Laravel\Dusk\Browser;
 
 class ProtectedAreaTest extends LoggedInTestCase
 {
