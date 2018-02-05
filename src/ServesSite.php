@@ -46,6 +46,6 @@ trait ServesSite
 
     protected static function usingTestSite()
     {
-        return !file_exists(__DIR__.'/../.env');
+        return ! file_exists(__DIR__.'/../.env');
     }
 }
