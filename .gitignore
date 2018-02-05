@@ -1,0 +1,5 @@
+composer.lock
+.env
+vendor
+tests/Browser/console/*
+tests/Browser/screenshots/*

@@ -1,0 +1,17 @@
+language: php
+
+sudo: required
+
+dist: trusty
+
+php:
+  - 7.0
+  - 7.1
+  - 7.2
+
+before_script:
+  - composer config discard-changes true
+  - travis_retry composer install --prefer-dist --no-interaction --prefer-stable
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
+  - ./vendor/laravel/dusk/bin/chromedriver-linux &

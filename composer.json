@@ -1,0 +1,21 @@
+{
+    "name": "konsulting/dusk-standalone-example",
+    "description" : "Simple example for using konsulting/dusk-standalone for testing",
+    "require": {
+        "php": "^7.0",
+        "konsulting/dusk-standalone": "^2.0",
+        "vlucas/phpdotenv": "^2.4"
+    },
+    "authors": [
+        {
+            "name": "Keoghan Litchfield",
+            "email": "keoghan@klever.co.uk"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\Tests\\": "tests/",
+            "App\\": "src/"
+        }
+    }
+}
