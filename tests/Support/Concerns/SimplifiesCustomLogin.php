@@ -44,7 +44,7 @@ trait SimplifiesCustomLogin
     }
 
     /**
-     * Log the user our
+     * Log the user our.
      */
     public function logout()
     {

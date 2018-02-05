@@ -2,11 +2,11 @@
 
 namespace App\Tests;
 
+use App\ServesSite;
 use Facebook\WebDriver\Chrome\ChromeOptions;
 use Facebook\WebDriver\Remote\DesiredCapabilities;
 use Facebook\WebDriver\Remote\RemoteWebDriver;
 use Konsulting\DuskStandalone\TestCase;
-use App\ServesSite;
 
 class DuskTestCase extends TestCase
 {
@@ -16,7 +16,7 @@ class DuskTestCase extends TestCase
     use ServesSite;
 
     /**
-     * Set the base url
+     * Set the base url.
      *
      * @return string
      */
@@ -35,7 +35,7 @@ class DuskTestCase extends TestCase
      */
     protected function driver()
     {
-        $options = (new ChromeOptions)->addArguments(array_merge(
+        $options = (new ChromeOptions())->addArguments(array_merge(
             ['--disable-gpu'],
             env('HEADLESS', true) ? ['--headless'] : []
         ));

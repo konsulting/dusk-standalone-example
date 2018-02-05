@@ -1,11 +1,11 @@
 <?php
 
-require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__.'/../vendor/autoload.php';
 
 // Load up the environment file, if it exists.
 if (file_exists(__DIR__.'/../.env')) {
-    (new Dotenv\Dotenv(__DIR__ . '/..'))->load();
+    (new Dotenv\Dotenv(__DIR__.'/..'))->load();
 }
 
 // Register Macros: this adds custom login/logout methods
-(new App\Tests\Support\BrowserMacros)->register();
+(new App\Tests\Support\BrowserMacros())->register();
