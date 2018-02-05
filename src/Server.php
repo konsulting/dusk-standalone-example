@@ -49,7 +49,7 @@ class Server
 
     public function stop()
     {
-        if (!$this->process || !$this->process->isRunning()) {
+        if (! $this->process || ! $this->process->isRunning()) {
             return;
         }
 

@@ -3,10 +3,10 @@
 namespace App\Tests;
 
 use App\ServesSite;
-use Facebook\WebDriver\Chrome\ChromeOptions;
-use Facebook\WebDriver\Remote\DesiredCapabilities;
-use Facebook\WebDriver\Remote\RemoteWebDriver;
 use Konsulting\DuskStandalone\TestCase;
+use Facebook\WebDriver\Chrome\ChromeOptions;
+use Facebook\WebDriver\Remote\RemoteWebDriver;
+use Facebook\WebDriver\Remote\DesiredCapabilities;
 
 class DuskTestCase extends TestCase
 {
